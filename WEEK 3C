@@ -1,0 +1,5 @@
+string status;
+do {
+    cout << "Enter status (Present/Absent/Late): ";
+    cin >> status;
+} while(status != "Present" && status != "Absent" && status != "Late");
