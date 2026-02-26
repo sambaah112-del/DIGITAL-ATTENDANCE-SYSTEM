@@ -1,0 +1,14 @@
+void displaySummary() {
+    int present = 0, absent = 0, late = 0;
+
+    for(auto r : records) {
+        if(r.status == "Present") present++;
+        else if(r.status == "Absent") absent++;
+        else if(r.status == "Late") late++;
+    }
+
+    cout << "\nSummary:\n";
+    cout << "Present: " << present << endl;
+    cout << "Absent: " << absent << endl;
+    cout << "Late: " << late << endl;
+}
