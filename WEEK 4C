@@ -1,0 +1,9 @@
+void saveSession() {
+    ofstream file("session.txt");
+
+    for(auto r : records) {
+        file << r.indexNumber << "," << r.status << endl;
+    }
+
+    file.close();
+}
