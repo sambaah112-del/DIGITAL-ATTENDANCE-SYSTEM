@@ -1,0 +1,33 @@
+int main() {
+    int choice;
+
+    do {
+        cout << "\n==== DIGITAL ATTENDANCE SYSTEM ====\n";
+        cout << "1. Register Student\n";
+        cout << "2. View Students\n";
+        cout << "3. Create Lecture Session\n";
+        cout << "4. Exit\n";
+        cout << "Enter choice: ";
+        cin >> choice;
+
+        switch(choice) {
+            case 1:
+                // Call register function
+                break;
+            case 2:
+                // Call view function
+                break;
+            case 3:
+                // Create session
+                break;
+            case 4:
+                cout << "Exiting...\n";
+                break;
+            default:
+                cout << "Invalid choice!\n";
+        }
+
+    } while(choice != 4);
+
+    return 0;
+}
