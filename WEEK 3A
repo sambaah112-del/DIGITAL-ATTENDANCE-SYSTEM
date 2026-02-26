@@ -1,0 +1,10 @@
+struct AttendanceRecord {
+    string indexNumber;
+    string status; // Present, Absent, Late
+};
+void markAttendance(string index, string status) {
+    AttendanceRecord record;
+    record.indexNumber = index;
+    record.status = status;
+    records.push_back(record);
+}
